@@ -87,7 +87,7 @@ nav {
  *──
  */
 .nav-top-row-2-icons {
-	width: 98px;
+	/* width: 98px; */
 	height: 48px;
 }
 
@@ -197,17 +197,16 @@ nav {
  *──  nav top row 2 icon_1 <────
  *──
  */
- .search-icon {
-    
- }
+	.search-icon {
+	}
 	/*
  *──
  *──  nav top row 2 icon_2 <────
  *──
  */
- .hamburger{
-    display: none;
- }
+	.hamburger {
+		display: none;
+	}
 	/* ? ============================================================================ */
 
 	/* ?  =============================== nav bottom ===============================  */
