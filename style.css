@@ -62,9 +62,15 @@ nav {
  *──
  */
 .nav-top-row-1 {
+	background-color: black;
 	height: 32px;
 	justify-content: space-between;
+	align-items: center;
 }
+.nav-top-row-1 a {
+	color: silver;
+	padding-left: 12px;
+ }
 /*
  *──
  *──  nav top row 1 Left <────
@@ -76,7 +82,9 @@ nav {
  *──  nav top row 1 Right <────
  *──
  */
-
+.nav-top-row-1-R {
+	padding-right: 15px;
+ }
 /*
  *──
  *── ─────────────────────────── nav top row 2
