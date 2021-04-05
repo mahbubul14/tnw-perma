@@ -106,6 +106,9 @@ nav {
  *──  nav top row 2 L <────
  *──
  */
+.nav-top-row-2-L-container{
+	display: none;
+}
 .nav-top-row-2-L {
 	justify-content: center;
 	align-items: center;
@@ -125,6 +128,7 @@ nav {
 .nav-top-row-2-icons {
 	/* width: 98px; */
 	height: 48px;
+	float: right;
 }
 
 .nav-top-row-2-icons a {
@@ -211,7 +215,7 @@ nav {
  *──  nav top row 1 Left <────
  *──
  */
-
+ 
 	/*
  *──
  *──  nav top row 1 Right <────
@@ -229,7 +233,9 @@ nav {
  *──  nav top row 2 L <────
  *──
  */
-
+ .nav-top-row-2-L-container{
+	display: inherit;
+}
 	/*
  *──
  *──  nav top row 2 icon_1 <────
