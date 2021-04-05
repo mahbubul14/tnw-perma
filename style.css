@@ -56,7 +56,9 @@ nav {
  *── ─────────────────────────── nav top row 1
  *──
  */
-
+ .nav-top-row-1 {
+	justify-content: space-between;
+ }
 /*
  *──
  *──  nav top row 1 Left <────
