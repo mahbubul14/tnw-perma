@@ -5,6 +5,8 @@
 }
 a {
 	width: 100%;
+	color: black;
+	text-decoration: none;
 }
 img {
 	width: 100%;
@@ -31,7 +33,7 @@ nav {
 .nav-top {
 	/* if yopu fix the top nav it will not be responsive */
 	/* height: 48px; */
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 /*
@@ -50,15 +52,19 @@ nav {
  *── ────────────────────────────────────────── nav top Right
  *──
  */
+.nav-top-R {
+	width: 100%;
+}
 
 /*
  *──
  *── ─────────────────────────── nav top row 1
  *──
  */
- .nav-top-row-1 {
+.nav-top-row-1 {
+	height: 32px;
 	justify-content: space-between;
- }
+}
 /*
  *──
  *──  nav top row 1 Left <────
@@ -76,12 +82,23 @@ nav {
  *── ─────────────────────────── nav top row 2
  *──
  */
-
+.nav-top-row-2 {
+	justify-content: space-between;
+}
 /*
  *──
  *──  nav top row 2 L <────
  *──
  */
+.nav-top-row-2-L {
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-top-row-2-L a {
+	padding: 0 12px;
+	color: gray;
+}
 
 /*
  *──
