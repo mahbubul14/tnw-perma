@@ -4,9 +4,12 @@
 	box-sizing: border-box;
 }
 a {
-	width: 100%;
+	/* width: 100%; */
 	color: black;
 	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 500;
 }
 img {
 	width: 100%;
@@ -61,6 +64,11 @@ nav {
  *── ─────────────────────────── nav top row 1
  *──
  */
+
+.nav-top-row-1-container {
+	display: none;
+}
+
 .nav-top-row-1 {
 	background-color: black;
 	height: 32px;
@@ -70,7 +78,7 @@ nav {
 .nav-top-row-1 a {
 	color: silver;
 	padding-left: 12px;
- }
+}
 /*
  *──
  *──  nav top row 1 Left <────
@@ -84,7 +92,7 @@ nav {
  */
 .nav-top-row-1-R {
 	padding-right: 15px;
- }
+}
 /*
  *──
  *── ─────────────────────────── nav top row 2
@@ -104,6 +112,7 @@ nav {
 }
 
 .nav-top-row-2-L a {
+	/* border: 2px solid red; */
 	padding: 0 12px;
 	color: gray;
 }
@@ -160,7 +169,7 @@ nav {
 
 /* ? -------------------------------------------------------------------------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 	/*
 !# ############################################################################################################################## #
 !# ----------------------------------------------------------- Navbar ----------------------------------------------------------- #
@@ -194,7 +203,9 @@ nav {
  *── ─────────────────────────── nav top row 1
  *──
  */
-
+	.nav-top-row-1-container {
+		display: inherit;
+	}
 	/*
  *──
  *──  nav top row 1 Left <────
@@ -224,8 +235,7 @@ nav {
  *──  nav top row 2 icon_1 <────
  *──
  */
-	.search-icon {
-	}
+
 	/*
  *──
  *──  nav top row 2 icon_2 <────
