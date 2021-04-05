@@ -1,2 +1,5 @@
 .vscode
 settings.json
+node_modules/
+.stylelintrc.json
+.hintrc
