@@ -859,6 +859,9 @@ footer {
 ?  ============================== f - fourth  ==============================
 ? ============================================================================
  */
+ .f-fourth {
+	 display: none;
+ }
 .f-fourth a {
 	color: gray;
 }
@@ -885,6 +888,11 @@ footer {
 */
 
 @media only screen and (min-width: 768px) {
+.f-parent{
+	width: 25%;
+	display: flex;
+	flex-wrap: nowrap;
+}
 }
 
 /*
