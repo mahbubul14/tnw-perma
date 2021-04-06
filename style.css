@@ -537,19 +537,25 @@ footer {
 !# ############################################################################################################################## #
  */
 .highlights {
+	border: 3px solid green;
 	width: 100%;
+	height: 41rem;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'first-highlight'
+		'second-highlight'
+		'third-highlight';
 }
 
 .highlights-article {
 	/* todo: change this asap */
-	height: 210px;
+	/* height: 210px; */
 	margin: 10px;
 	align-items: flex-end;
 	color: white;
 }
-
-/* .highlights-article a {
-} */
 
 .highlights-article h2 a {
 	color: white;
@@ -585,7 +591,10 @@ li a {
 		),
 		url('images/logo.png');
 	background-size: cover;
+	background-position: center;
 	padding: 20px;
+
+	grid-area: first-highlight;
 
 	/* color: white; */
 }
@@ -603,7 +612,10 @@ li a {
 		),
 		url('images/google-account.png');
 	background-size: cover;
+	background-position: center;
 	padding: 20px;
+
+	grid-area: second-highlight;
 
 	/* color: white; */
 }
@@ -621,7 +633,10 @@ li a {
 		),
 		url('images/macapp.png');
 	background-size: cover;
+	background-position: center;
 	padding: 20px;
+
+	grid-area: third-highlight;
 
 	/* color: white; */
 }
@@ -656,15 +671,7 @@ li a {
 
 	/* *----------------------------------------------------- */
 
-	.first-highlight {
-		grid-area: first-highlight;
-	}
-
 	/* *----------------------------------------------------- */
-
-	.second-highlight {
-		grid-area: second-highlight;
-	}
 
 	.second-highlight ul li:last-child {
 		display: none;
@@ -672,9 +679,6 @@ li a {
 
 	/* *----------------------------------------------------- */
 
-	.third-highlight {
-		grid-area: third-highlight;
-	}
 	.third-highlight ul li:last-child {
 		display: none;
 	}
@@ -686,6 +690,17 @@ li a {
 ? --------------------------------------------------------------------------
 */
 @media only screen and (min-width: 1024px) {
+	/* *----------------------------------------------------- */
+
+	.second-highlight ul li:last-child {
+		display: inherit;
+	}
+
+	/* *----------------------------------------------------- */
+
+	.third-highlight ul li:last-child {
+		display: inherit;
+	}
 }
 
 /*
