@@ -622,8 +622,25 @@ li a {
 */
 
 @media only screen and (min-width: 768px) {
+.highlights{
+	display: grid;
+	grid-template-columns: auto 20%;
+	grid-template-rows: auto 25%;
+	grid-template-areas: "first-highlight second-hightlight" 
+	"first-highlight third-highlight";
+
+}
+.first-highlight {
+	grid-area: first-highlight;
+}
+.second-highlight{
+	grid-area: second-hightlight;
 }
 
+.third-highlight{
+	grid-area: third-highlight;
+}
+}
 /*
 ? --------------------------------------------------------------------------
 ?               Large devices (laptops/desktops, 992px and up)
