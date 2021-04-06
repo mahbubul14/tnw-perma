@@ -1,6 +1,9 @@
 /* todo: ul->li->a --- display:inline ============= */
 
 /* todo: linear-gradient(gradient ,--> url (img) */
+:root {
+	--orange: #f42;
+}
 
 * {
 	padding: 0;
