@@ -5,7 +5,7 @@
 
 > The project is a clone of the PNW | PERMA website.
 
-![screenshot](./images/TNW-clone)
+![](./images/TNW-clone.PNG)
 
 This page(in the project) is actually built in a responsive way.
 
@@ -24,6 +24,12 @@ This page(in the project) is actually built in a responsive way.
 - GitHub: [@githubhandle](https://www.linkedin.com/in/mahbubul-alam-20595/)
 - Twitter: [@twitterhandle](https://twitter.com/MahbubA10454419)
 - LinkedIn: [LinkedIn](https://github.com/mahbubul14/)
+
+## 👤 **Saman**
+
+- GitHub: [@SamanAtashi](https://github.com/SamanAtashi)
+- Twitter: [@AtashiSaman](https://twitter.com/AtashiSaman)
+- LinkedIn: [@saman-atashi](https://www.linkedin.com/in/saman-atashi-9539911b0)
 
 ## 🤝 Contributing
 
