@@ -572,7 +572,7 @@ footer {
 
 .highlights-article h2 a {
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 22px;
 }
@@ -689,6 +689,10 @@ footer {
       'first-highlight third-highlight';
   }
 
+  .biger-font {
+	font-size: 2rem;
+  }
+
   /* *----------------------------------------------------- */
 
   /* *----------------------------------------------------- */
@@ -714,6 +718,10 @@ footer {
 
   .second-highlight ul li:last-child {
     display: inherit;
+  }
+
+  .biger-font {
+	font-size: 2.5rem;
   }
 
   /* *----------------------------------------------------- */
