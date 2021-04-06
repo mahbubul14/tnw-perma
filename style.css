@@ -8,7 +8,6 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	white-space: nowrap;
 }
 
 a {
@@ -114,6 +113,7 @@ nav {
 .nav-top-row-2 {
 	width: 100%;
 	justify-content: space-between;
+	white-space: nowrap;
 }
 
 /*
@@ -285,13 +285,11 @@ nav {
 !# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
  */
 }
-
-/* ? -------------------------------------------------------------------------- */
-
-/* ?               Large devices (laptops/desktops, 992px and up)               */
-
-/* ? -------------------------------------------------------------------------- */
-
+/*
+? --------------------------------------------------------------------------
+?               Large devices (laptops/desktops, 992px and up)            
+? --------------------------------------------------------------------------
+*/
 @media only screen and (min-width: 1024px) {
 	/*
 !# ############################################################################################################################## #
@@ -393,21 +391,23 @@ nav {
  */
 footer {
 	width: 100%;
-	height: 283px;
-	border: 1px solid red;
+	/* height: 283px; */
+	/* border: 1px solid red; */
 }
+
 /*
 ? ============================================================================
 ?  ============================== footer row 1  ==============================
 ? ============================================================================
  */
 .footer-row-1 {
-	height: 91px;
-	padding: 35px 0;
-	background-color: rgb(63, 63, 63);
+	/* height: 91px; */
+	/* padding: 35px 0; */
+	background-color: rgb(19, 19, 19);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 1px solid rgb(85, 85, 85);
 }
 /*
  *──
@@ -418,26 +418,38 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin: 0 5px;
+	flex-wrap: wrap;
 }
 
 .icons li a {
 	border-radius: 50%;
 	background-color: rgb(85, 85, 85);
-	width: 40px;
-	height: 40px;
+	padding: 12px;
+	margin: 35px 3px 21px 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .icons li a img {
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 }
 /*
  *──
  *── ────────────────────────────────────────── footer links
  *──
  */
-.footer-links li a{
-		color: silver;
+
+.footer-links {
+	margin-bottom: 35px;
+}
+
+.footer-links li a {
+	color: silver;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0 4px;
 }
 /*
 ? ============================================================================
@@ -445,20 +457,35 @@ footer {
 ? ============================================================================
  */
 .footer-row-2 {
+	color: rgb(170, 170, 170);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: 57px;
+	/* height: 57px; */
 	padding: 32px 0;
 	background-color: rgb(0, 0, 0);
 }
 
+.footer-row-2 p {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+/* 
 .footer-row-2 img {
 	width: 100px;
-}
+} */
 /*
  *──
  *── ────────────────────────────────────────── 1
  *──
  */
+.f-row-2-1 img {
+	width: 40px;
+	height: auto;
+}
 
 /*
  *──
@@ -471,6 +498,48 @@ footer {
  *── ────────────────────────────────────────── 3
  *──
  */
+
+.f-row-2-3 img {
+	width: 66px;
+	height: auto;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# -------------------------------------------------------- Media Query -------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+
+/*
+? --------------------------------------------------------------------------
+?      Small devices (portrait tablets and large phones, 600px and up)
+? --------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) {
+.footer-row-2 {
+
+	flex-direction: row;
+padding: 40px 5px;
+	justify-content: center;
+	align-items: center;
+
+
+}
+/*
+? --------------------------------------------------------------------------
+?               Large devices (laptops/desktops, 992px and up)            
+? --------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 1024px) {
+}
 
 /*
 !# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
