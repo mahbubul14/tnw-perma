@@ -1,8 +1,4 @@
-/* todo: GET RID OF THE HORIZIONTAL SCROLL BAR */
-
 /* todo: change the line 30 img to pixel */
-
-/* todo: typography font size */
 
 :root {
   --orange: #f42;
@@ -66,7 +62,7 @@ img {
  *──
  */
 .nav-top-L {
-  width: 10%;
+  width: 106px;
   height: 48px;
   background-color: black;
 }
