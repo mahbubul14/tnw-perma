@@ -11,8 +11,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		
-		<header class="d-flex">
+		<header class="root-header d-flex">
 			<div class="nav-top d-flex">
 				<!-- L = left and R = right -->
 				<div class="nav-top-L d-flex">
@@ -24,8 +23,8 @@
 						/>
 					</a>
 				</div>
-				<div class="nav-top-R">
-					<div class="nav-top-row-1-container">
+				<nav class="nav-top-R">
+					<nav class="nav-top-row-1-container">
 						<div
 							class="nav-top-row-1 d-flex"
 						>
@@ -110,8 +109,8 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div class="nav-top-row-2 d-flex">
+					</nav>
+					<nav class="nav-top-row-2 d-flex">
 						<div
 							class="nav-top-row-2-L-container"
 						>
@@ -182,8 +181,8 @@
 									alt=""
 							/></a>
 						</div>
-					</div>
-				</div>
+					</nav>
+				</nav>
 			</div>
 			<div class="nav-bottom d-flex">
 				<p>
@@ -193,7 +192,6 @@
 				</p>
 			</div>
 		</header>
-		<!-- todo: change highlight section to div highlight -->
 		<div class="highlights">
 			<article
 				class="first-highlight highlights-article d-flex"
@@ -297,23 +295,30 @@
 			</article>
 		</div>
 		<section class="funding">
-			<header class="funding-header">
+			<div class="funding-header">
 				<h3>
 					<a href="#"
 						>Latest funding rounds on
 						Index.co</a
 					>
 				</h3>
-				<ul>
-					<li><a href="#">See more</a></li>
-					<li>
-						<a href="#"
-							>Get updates by email</a
-						>
-					</li>
-					<li><a href="#">Add info</a></li>
-				</ul>
-			</header>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">See more</a>
+						</li>
+						<li>
+							<a href="#"
+								>Get updates by
+								email</a
+							>
+						</li>
+						<li>
+							<a href="#">Add info</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			<div class="f-container">
 				<div class="f-first f-parent">
 					<img
@@ -321,9 +326,9 @@
 						src="./images/funding1.png"
 						alt=""
 					/>
-					<div class="p1">
+					<h4 class="p1">
 						<a href="#">Ringover</a>
-					</div>
+					</h4>
 					<div class="p2">
 						<a href="#"
 							>$12M<span
@@ -368,9 +373,9 @@
 						src="./images/funding2.png"
 						alt=""
 					/>
-					<div class="p1">
+					<h4 class="p1">
 						<a href="#">SwissDeCode</a>
-					</div>
+					</h4>
 					<div class="p2">
 						<a href="#"
 							>$4.2M<span
@@ -414,9 +419,9 @@
 						src="./images/funding3.png"
 						alt=""
 					/>
-					<div class="p1">
+					<h4 class="p1">
 						<a href="#">Klook</a>
-					</div>
+					</h4>
 					<div class="p2">
 						<a href="#"
 							>$200M<span
@@ -455,9 +460,9 @@
 						src="./images/funding4.png"
 						alt=""
 					/>
-					<div class="p1">
+					<h4 class="p1">
 						<a href="#">Wolt</a>
-					</div>
+					</h4>
 					<div class="p2">
 						<a href="#"
 							>$530M<span
@@ -495,7 +500,7 @@
 		</section>
 		<footer>
 			<div class="footer-row-1 d-flex">
-				<div class="footer-icon">
+				<nav class="footer-icon">
 					<ul class="icons d-flex">
 						<li>
 							<a href="#"
@@ -547,8 +552,8 @@
 							/></a>
 						</li>
 					</ul>
-				</div>
-				<div class="footer-links d-flex">
+				</nav>
+				<nav class="footer-links d-flex">
 					<ul>
 						<li>
 							<a href="#">EVENTS</a>
@@ -560,7 +565,7 @@
 							<a href="#">CONTACT</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 			<div class="footer-row-2 d-flex">
 				<div class="f-row-2-1 d-flex">
