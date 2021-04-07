@@ -1,43 +1,38 @@
-/* todo: ul->li->a --- display:inline ============= */
-
-/* todo: linear-gradient(gradient ,--> url (img) */
 :root {
-  --orange: #f42;
-  --pinkish: #ffebe7;
-  --almostPink: #fffaf8;
-  --borderpink: #ffcdc2;
+	--orange: #f42;
+	--pinkish: #ffebe7;
+	--almostPink: #fffaf8;
+	--borderpink: #ffcdc2;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
 }
 
 body {
-  /* border: 2px solid red; */
-
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .d-flex {
-  display: flex;
+	display: flex;
 }
 
 .d-inline {
-  display: inline;
+	display: inline;
 }
 
 /*
@@ -46,11 +41,11 @@ img {
 !# ############################################################################################################################## #
  */
 nav {
-  background-color: white;
-  z-index: 100;
-  position: fixed;
-  flex-direction: column;
-  width: 100%;
+	background-color: white;
+	z-index: 100;
+	position: fixed;
+	flex-direction: column;
+	width: 100%;
 }
 
 /*
@@ -60,21 +55,14 @@ nav {
  */
 
 /*
- .nav-top {
- if yopu fix the top nav it will not be responsive
- height: 48px;
- justify-content: space-between;
-} */
-
-/*
  *──
  *── ────────────────────────────────────────── nav top LEFT
  *──
  */
 .nav-top-L {
-  width: 10%;
-  height: 48px;
-  background-color: black;
+	width: 10%;
+	height: 48px;
+	background-color: black;
 }
 
 /*
@@ -83,7 +71,7 @@ nav {
  *──
  */
 .nav-top-R {
-  width: 90%;
+	width: 90%;
 }
 
 /*
@@ -93,26 +81,20 @@ nav {
  */
 
 .nav-top-row-1-container {
-  display: none;
+	display: none;
 }
 
 .nav-top-row-1 {
-  background-color: black;
-  height: 32px;
-  justify-content: space-between;
-  align-items: center;
+	background-color: black;
+	height: 32px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav-top-row-1 a {
-  color: silver;
-  padding-left: 12px;
+	color: silver;
+	padding-left: 12px;
 }
-
-/*
- *──
- *──  nav top row 1 Left <────
- *──
- */
 
 /*
  *──
@@ -120,7 +102,7 @@ nav {
  *──
  */
 .nav-top-row-1-R {
-  padding-right: 15px;
+	padding-right: 15px;
 }
 
 /*
@@ -129,9 +111,9 @@ nav {
  *──
  */
 .nav-top-row-2 {
-  width: 100%;
-  justify-content: space-between;
-  white-space: nowrap;
+	width: 100%;
+	justify-content: space-between;
+	white-space: nowrap;
 }
 
 /*
@@ -140,18 +122,18 @@ nav {
  *──
  */
 .nav-top-row-2-L-container {
-  display: none;
+	display: none;
 }
 
 .nav-top-row-2-L {
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav-top-row-2-L a {
-  /* border: 2px solid red; */
-  padding: 0 12px;
-  color: gray;
+	/* border: 2px solid red; */
+	padding: 0 12px;
+	color: gray;
 }
 
 /*
@@ -160,22 +142,16 @@ nav {
  *──
  */
 .nav-top-row-2-icons {
-  width: 100%;
-  height: 48px;
-  justify-content: flex-end;
+	width: 100%;
+	height: 48px;
+	justify-content: flex-end;
 }
 
 .nav-top-row-2-icons a {
-  width: 48px;
-  padding: 15px;
-  border-left: 1px solid gray;
+	width: 48px;
+	padding: 15px;
+	border-left: 1px solid gray;
 }
-
-/*
- *──
- *──  nav top row 2 icon_2 <────
- *──
- */
 
 /*
 ? ============================================================================
@@ -183,197 +159,11 @@ nav {
 ? ============================================================================
  */
 .nav-bottom {
-  font-size: 0.8rem;
-  height: 60px;
-  background-color: rgb(255, 221, 51);
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
-!#                                                              End                                                              #
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
- */
-
-/*
-!# ############################################################################################################################## #
-!# -------------------------------------------------------- Media Query -------------------------------------------------------- #
-!# ############################################################################################################################## #
- */
-
-/*
-? --------------------------------------------------------------------------
-?      Small devices (portrait tablets and large phones, 600px and up)
-? --------------------------------------------------------------------------
-*/
-
-@media only screen and (min-width: 768px) {
-  /*
-!# ############################################################################################################################## #
-!# ----------------------------------------------------------- Navbar ----------------------------------------------------------- #
-!# ############################################################################################################################## #
- */
-
-  /*
-? ============================================================================
-?  ================================ nav TOP  ================================
-? ============================================================================
- */
-
-  /*
- *──
- *── ────────────────────────────────────────── nav top RIght
- *──
- */
-  .nav-top-R {
-    width: 100%;
-  }
-
-  /*
- *──
- *── ────────────────────────────────────────── nav top LEFT
- *──
- */
-  .nav-top-L {
-    height: 80px;
-    padding: 16px 0;
-  }
-
-  /*
- *──
- *── ─────────────────────────── nav top row 1
- *──
- */
-  .nav-top-row-1-container {
-    display: inherit;
-  }
-
-  /*
- *──
- *── ─────────────────────────── nav top row 2
- *──
- */
-
-  /*
- *──
- *──  nav top row 2 L <────
- *──
- */
-  .nav-top-row-2-L-container {
-    display: inherit;
-  }
-
-  /*
- *──
- *──  nav top row 2 icon_2 <────
- *──
- */
-  .hamburger {
-    display: none;
-  }
-
-  /*
-? ============================================================================
-?  ================================ nav bottom  ================================
-? ============================================================================
- */
-
-  .nav-bottom {
-    height: 32px;
-  }
-
-  /*
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
-!#                                                              End                                                              #
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
- */
-}
-
-/*
-? --------------------------------------------------------------------------
-?               Large devices (laptops/desktops, 992px and up)
-? --------------------------------------------------------------------------
-*/
-@media only screen and (min-width: 1024px) {
-  /*
-? ============================================================================
-?  ================================ nav TOP  ================================
-? ============================================================================
- */
-
-  /*
- *──
- *── ────────────────────────────────────────── nav top LEFT
- *──
- */
-  .nav-top-L {
-    display: none;
-  }
-
-  /*
- *──
- *── ────────────────────────────────────────── nav top Right
- *──
- */
-
-  /*
- *──
- *── ─────────────────────────── nav top row 1
- *──
- */
-
-  /*
- *──
- *──  nav top row 1 Left <────
- *──
- */
-  .nav-top-row-1-L {
-    padding-left: 10px;
-  }
-
-  /*
- *──
- *──  nav top row 1 Right <────
- *──
- */
-
-  /*
- *──
- *── ─────────────────────────── nav top row 2
- *──
- */
-
-  /*
- *──
- *──  nav top row 2 L <────
- *──
- */
-  .nav-top-row-2-L {
-    padding-left: 10px;
-  }
-
-  /*
- *──
- *──  nav top row 2 icon_1 <────
- *──
- */
-
-  /*
- *──
- *──  nav top row 2 icon_2 <────
- *──
- */
-
-  /*
-? ============================================================================
-?  ================================ nav bottom  ================================
-? ============================================================================
- */
-  .nav-bottom {
-    justify-content: flex-start;
-    padding-left: 22px;
-  }
+	font-size: 0.8rem;
+	height: 60px;
+	background-color: rgb(255, 221, 51);
+	justify-content: center;
+	align-items: center;
 }
 
 /*
@@ -388,11 +178,7 @@ nav {
 !# ############################################################################################################################## #
  */
 footer {
-  width: 100%;
-
-  /* height: 283px; */
-
-  /* border: 1px solid red; */
+	width: 100%;
 }
 
 /*
@@ -401,14 +187,11 @@ footer {
 ? ============================================================================
  */
 .footer-row-1 {
-  /* height: 91px; */
-
-  /* padding: 35px 0; */
-  background-color: rgb(19, 19, 19);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid rgb(85, 85, 85);
+	background-color: rgb(19, 19, 19);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgb(85, 85, 85);
 }
 
 /*
@@ -417,25 +200,25 @@ footer {
  *──
  */
 .icons {
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	flex-wrap: wrap;
 }
 
 .icons li a {
-  border-radius: 50%;
-  background-color: rgb(85, 85, 85);
-  padding: 12px;
-  margin: 35px 3px 21px 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	border-radius: 50%;
+	background-color: rgb(85, 85, 85);
+	padding: 12px;
+	margin: 35px 3px 21px 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .icons img {
-  width: 20px;
-  height: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 /*
@@ -445,14 +228,14 @@ footer {
  */
 
 .footer-links {
-  margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .footer-links li a {
-  color: silver;
-  font-size: 13px;
-  line-height: 24px;
-  margin: 0 4px;
+	color: silver;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0 4px;
 }
 
 /*
@@ -461,43 +244,31 @@ footer {
 ? ============================================================================
  */
 .footer-row-2 {
-  color: rgb(170, 170, 170);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  /* height: 57px; */
-  padding: 32px 0;
-  background-color: rgb(0, 0, 0);
+	color: rgb(170, 170, 170);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 32px 0;
+	background-color: rgb(0, 0, 0);
 }
 
 .footer-row-2 p {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 19px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 19px;
 }
-
-/*
-.footer-row-2 img {
-	width: 100px;
-} */
 
 /*
  *──
  *── ────────────────────────────────────────── 1
  *──
  */
-.f-row-2-1 img {
-  width: 40px;
-  height: auto;
-}
 
-/*
- *──
- *── ────────────────────────────────────────── 2
- *──
- */
+.f-row-2-1 img {
+	width: 40px;
+	height: auto;
+}
 
 /*
  *──
@@ -506,35 +277,8 @@ footer {
  */
 
 .f-row-2-3 img {
-  width: 66px;
-  height: auto;
-}
-
-/*
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
-!#                                                              End                                                              #
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
- */
-
-/*
-!# ############################################################################################################################## #
-!# -------------------------------------------------------- Media Query -------------------------------------------------------- #
-!# ############################################################################################################################## #
- */
-
-/*
-? --------------------------------------------------------------------------
-?      Small devices (portrait tablets and large phones, 600px and up)
-? --------------------------------------------------------------------------
-*/
-
-@media only screen and (min-width: 768px) {
-  .footer-row-2 {
-    flex-direction: row;
-    padding: 40px 5px;
-    justify-content: center;
-    align-items: center;
-  }
+	width: 66px;
+	height: auto;
 }
 
 /*
@@ -549,52 +293,49 @@ footer {
 !# ############################################################################################################################## #
  */
 .highlights {
-  margin-top: 110px;
-  width: 100%;
-  height: 55rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    'first-highlight'
-    'second-highlight'
-    'third-highlight';
+	margin-top: 110px;
+	width: 100%;
+	height: 55rem;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'first-highlight'
+		'second-highlight'
+		'third-highlight';
 }
 
 .highlights-article {
-  /* todo: change this asap */
-
-  /* height: 210px; */
-  margin: 10px;
-  align-items: flex-end;
-  color: white;
+	margin: 10px;
+	align-items: flex-end;
+	color: white;
 }
 
 .highlights-article h2 a {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 22px;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 22px;
 }
 
 .highlights-article ul li {
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 3px;
-  display: flex;
-  align-items: center;
+	color: rgba(255, 255, 255, 0.6);
+	margin-right: 3px;
+	display: flex;
+	align-items: center;
 }
 
 .highlights-article ul li a {
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 3px;
-  display: flex;
-  align-items: center;
+	color: rgba(255, 255, 255, 0.6);
+	margin-right: 3px;
+	display: flex;
+	align-items: center;
 }
 
 .lower-highlight li img {
-  width: 16px;
-  height: 16px;
-  margin-right: 3px;
+	width: 16px;
+	height: 16px;
+	margin-right: 3px;
 }
 
 /*
@@ -603,19 +344,16 @@ footer {
 ? ============================================================================
  */
 .first-highlight {
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.52),
-      rgba(0, 0, 0, 0.73)
-    ),
-    url('images/logo.png');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  grid-area: first-highlight;
-
-  /* color: white; */
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.52),
+			rgba(0, 0, 0, 0.73)
+		),
+		url('images/logo.png');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	grid-area: first-highlight;
 }
 
 /*
@@ -624,19 +362,16 @@ footer {
 ? ============================================================================
  */
 .second-highlight {
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.3),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url('images/google-account.png');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  grid-area: second-highlight;
-
-  /* color: white; */
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.3),
+			rgba(0, 0, 0, 0.9)
+		),
+		url('images/google-account.png');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	grid-area: second-highlight;
 }
 
 /*
@@ -645,90 +380,16 @@ footer {
 ? ============================================================================
  */
 .third-highlight {
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.52),
-      rgba(0, 0, 0, 0.73)
-    ),
-    url('images/macapp.png');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  grid-area: third-highlight;
-
-  /* color: white; */
-}
-
-/*
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
-!#                                                              End                                                              #
-!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
- */
-
-/*
-!# ############################################################################################################################## #
-!# -------------------------------------------------------- Media Query -------------------------------------------------------- #
-!# ############################################################################################################################## #
- */
-
-/*
-? --------------------------------------------------------------------------
-?      Small devices (portrait tablets and large phones, 600px and up)
-? --------------------------------------------------------------------------
-*/
-
-@media only screen and (min-width: 768px) {
-  .highlights {
-    height: 27rem;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      'first-highlight second-highlight'
-      'first-highlight third-highlight';
-  }
-
-  .biger-font {
-    font-size: 2rem;
-  }
-
-  /* *----------------------------------------------------- */
-
-  /* *----------------------------------------------------- */
-
-  .second-highlight ul li:last-child {
-    display: none;
-  }
-
-  /* *----------------------------------------------------- */
-
-  .third-highlight ul li:last-child {
-    display: none;
-  }
-}
-
-/*
-? --------------------------------------------------------------------------
-?               Large devices (laptops/desktops, 992px and up)
-? --------------------------------------------------------------------------
-*/
-@media only screen and (min-width: 1024px) {
-  /* *----------------------------------------------------- */
-
-  .second-highlight ul li:last-child {
-    display: inherit;
-  }
-
-  .biger-font {
-    font-size: 2.5rem;
-  }
-
-  /* *----------------------------------------------------- */
-
-  .third-highlight ul li:last-child {
-    display: inherit;
-  }
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.52),
+			rgba(0, 0, 0, 0.73)
+		),
+		url('images/macapp.png');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	grid-area: third-highlight;
 }
 
 /*
@@ -743,8 +404,8 @@ footer {
 !# ############################################################################################################################## #
  */
 .funding {
-  width: 100%;
-  padding: 20px;
+	width: 100%;
+	padding: 20px;
 }
 
 /*
@@ -753,33 +414,33 @@ footer {
 ? ============================================================================
  */
 .funding-header {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .funding .funding-header a {
-  color: var(--orange);
+	color: var(--orange);
 }
 
 .funding-header h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 32px;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 32px;
 }
 
 .funding .funding-header li {
-  margin: 12px 0;
+	margin: 12px 0;
 }
 
 .f-parent {
-  position: relative;
+	position: relative;
 }
 
 .funding-img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 60px;
+	height: 60px;
 }
 
 /*
@@ -794,8 +455,8 @@ footer {
  *──
  */
 .p1 {
-  background-color: var(--orange);
-  padding: 10px 16px 10px 84px;
+	background-color: var(--orange);
+	padding: 10px 16px 10px 84px;
 }
 
 /*
@@ -804,15 +465,15 @@ footer {
  *──
  */
 .p2 {
-  background-color: var(--pinkish);
-  padding: 10px 16px 10px 84px;
-  font-size: 1.8rem;
+	background-color: var(--pinkish);
+	padding: 10px 16px 10px 84px;
+	font-size: 1.8rem;
 }
 
 .p2 span {
-  display: block;
-  font-size: 1rem;
-  color: gray;
+	display: block;
+	font-size: 1rem;
+	color: gray;
 }
 
 /*
@@ -821,23 +482,23 @@ footer {
  *──
  */
 .p3 {
-  background-color: var(--almostPink);
-  border-bottom: 1px solid var(--borderpink);
-  padding: 16px 0;
+	background-color: var(--almostPink);
+	border-bottom: 1px solid var(--borderpink);
+	padding: 16px 0;
 }
 
 .f-parent .p3 a {
-  display: block;
-  padding: 8px 16px;
+	display: block;
+	padding: 8px 16px;
 }
 
 .f-parent .p3 img {
-  width: 16px;
-  height: 16px;
+	width: 16px;
+	height: 16px;
 }
 
 .p3 p {
-  display: inline;
+	display: inline;
 }
 
 /*
@@ -846,8 +507,8 @@ footer {
  *──
  */
 .p4 {
-  background-color: var(--almostPink);
-  padding: 16px 16px 40px 16px;
+	background-color: var(--almostPink);
+	padding: 16px 16px 40px 16px;
 }
 
 /*
@@ -856,12 +517,12 @@ footer {
 ? ============================================================================
  */
 .f-container .f-first a {
-  color: gray;
+	color: gray;
 }
 
 .f-first .p1 a {
-  color: white;
-  font-size: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
 }
 
 /*
@@ -870,12 +531,12 @@ footer {
 ? ============================================================================
  */
 .f-container .f-second a {
-  color: gray;
+	color: gray;
 }
 
 .f-second .p1 a {
-  color: white;
-  font-size: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
 }
 
 /*
@@ -884,12 +545,12 @@ footer {
 ? ============================================================================
  */
 .f-container .f-third a {
-  color: gray;
+	color: gray;
 }
 
 .f-third .p1 a {
-  color: white;
-  font-size: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
 }
 
 /*
@@ -898,16 +559,16 @@ footer {
 ? ============================================================================
  */
 .f-fourth {
-  display: none;
+	display: none;
 }
 
 .f-container .f-fourth a {
-  color: gray;
+	color: gray;
 }
 
 .f-fourth .p1 a {
-  color: white;
-  font-size: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
 }
 
 /*
@@ -922,55 +583,173 @@ footer {
 !# ############################################################################################################################## #
  */
 
-/*
-? --------------------------------------------------------------------------
-?      Small devices (portrait tablets and large phones, 600px and up)
-? --------------------------------------------------------------------------
-*/
-
 @media only screen and (min-width: 768px) {
-  .f-container {
-    display: flex;
-  }
+	/*
+ *──
+ *── ────────────────────────────────────────── Navbar
+ *──
+ */
 
-  .f-parent {
-    margin: 0 10px;
-    width: 100%;
-  }
+	.nav-top-R {
+		width: 100%;
+	}
 
-  .funding-header {
-    padding-left: 10px;
-  }
+	.nav-top-L {
+		height: 80px;
+		padding: 16px 0;
+	}
 
-  .funding-header ul {
-    display: flex;
-  }
+	.nav-top-row-1-container {
+		display: inherit;
+	}
 
-  .funding-header ul li {
-    padding-right: 10px;
-    margin-right: 10px;
-    border-right: 1px solid var(--orange);
-  }
+	.nav-top-row-2-L-container {
+		display: inherit;
+	}
 
-  .funding-header ul li:last-child {
-    border-right: 0;
-  }
+	.hamburger {
+		display: none;
+	}
+
+	.nav-bottom {
+		height: 32px;
+	}
+
+	/*
+ *──
+ *── ────────────────────────────────────────── Footer
+ *──
+ */
+
+	.footer-row-2 {
+		flex-direction: row;
+		padding: 40px 5px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*
+ *──
+ *── ────────────────────────────────────────── Highlights
+ *──
+ */
+	.highlights {
+		height: 27rem;
+		display: grid;
+		grid-template-columns: 70% 30%;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			'first-highlight second-highlight'
+			'first-highlight third-highlight';
+	}
+
+	.biger-font {
+		font-size: 2rem;
+	}
+
+	/* *--------------------------------- */
+
+	.second-highlight ul li:last-child {
+		display: none;
+	}
+
+	/* *-------------------------------- */
+
+	.third-highlight ul li:last-child {
+		display: none;
+	}
+
+	/*
+ *──
+ *── ────────────────────────────────────────── Funding
+ *──
+ */
+	.f-container {
+		display: flex;
+	}
+
+	.f-parent {
+		margin: 0 10px;
+		width: 100%;
+	}
+
+	.funding-header {
+		padding-left: 10px;
+	}
+
+	.funding-header ul {
+		display: flex;
+	}
+
+	.funding-header ul li {
+		padding-right: 10px;
+		margin-right: 10px;
+		border-right: 1px solid var(--orange);
+	}
+
+	.funding-header ul li:last-child {
+		border-right: 0;
+	}
 }
 
 /*
-? --------------------------------------------------------------------------
-?               Large devices (laptops/desktops, 992px and up)
-? --------------------------------------------------------------------------
-*/
-@media only screen and (min-width: 1024px) {
-  .funding-header {
-    display: flex;
-    justify-content: space-between;
-  }
+!# ─────────────────────────────────────────────────────────────────────────────────────────── Desktop
+ */
 
-  .f-fourth {
-    display: unset;
-  }
+@media only screen and (min-width: 1024px) {
+	/*
+ *──
+ *── ────────────────────────────────────────── Navbar
+ *──
+ */
+	.nav-top-L {
+		display: none;
+	}
+
+	.nav-top-row-1-L {
+		padding-left: 10px;
+	}
+
+	.nav-top-row-2-L {
+		padding-left: 10px;
+	}
+
+	.nav-bottom {
+		justify-content: flex-start;
+		padding-left: 22px;
+	}
+
+	/*
+ *──
+ *── ────────────────────────────────────────── Highlights
+ *──
+ */
+	.second-highlight ul li:last-child {
+		display: inherit;
+	}
+
+	.biger-font {
+		font-size: 2.5rem;
+	}
+
+	/* *-------------------------------- */
+
+	.third-highlight ul li:last-child {
+		display: inherit;
+	}
+	/*
+ *──
+ *── ────────────────────────────────────────── Funding
+ *──
+ */
+	.funding-header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.f-fourth {
+		display: unset;
+	}
 }
 
 /*
