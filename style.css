@@ -803,7 +803,20 @@ footer {
  */
 
 .cat-links li {
-	list-style: inside;
+	list-style: none;
+  padding: 6px 0 6px 0;
+  border-bottom: 1px solid rgb(238, 232, 232);
+}
+
+.cat-links ul li::before {
+  content: "\2022";
+	color: red;
+}
+
+.cat-links li a {
+  color: grey;
+
+  font-size: .9rem;
 }
 
 /*
