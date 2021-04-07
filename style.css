@@ -348,14 +348,24 @@ footer {
 .first-highlight {
 	background-image: linear-gradient(
 			to bottom,
-			rgba(255, 255, 255, 0.52),
-			rgba(0, 0, 0, 0.73)
+			rgba(0, 0, 0, 0.25),
+			rgb(0, 0, 0)
 		),
 		url('images/logo.png');
 	background-size: cover;
 	background-position: center;
 	padding: 20px;
 	grid-area: first-highlight;
+}
+.tnw-red {
+	display: none;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.tnw-red img {
+	width: 390px;
+	height: 110px;
 }
 
 /*
@@ -366,8 +376,8 @@ footer {
 .second-highlight {
 	background-image: linear-gradient(
 			to bottom,
-			rgba(255, 255, 255, 0.3),
-			rgba(0, 0, 0, 0.9)
+			rgba(0, 0, 0, 0.25),
+			rgb(0, 0, 0)
 		),
 		url('images/google-account.png');
 	background-size: cover;
@@ -384,8 +394,8 @@ footer {
 .third-highlight {
 	background-image: linear-gradient(
 			to bottom,
-			rgba(255, 255, 255, 0.52),
-			rgba(0, 0, 0, 0.73)
+			rgba(0, 0, 0, 0.25),
+			rgb(0, 0, 0)
 		),
 		url('images/macapp.png');
 	background-size: cover;
@@ -726,6 +736,30 @@ footer {
  *── ────────────────────────────────────────── Highlights
  *──
  */
+	.first-highlight {
+		background-image: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 1) 0%,
+				rgba(0, 0, 0, 0.9) 20%,
+				rgba(245, 211, 211, 0.3) 50%,
+				rgba(255, 0, 0, 0.7) 100%
+			),
+			url('images/logo.png');
+		/* background-size: cover;
+	background-position: center;
+	padding: 20px;
+	grid-area: first-highlight; */
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.tnw-red {
+		display: inherit;
+		/* width: 100%;
+		display: flex;
+		justify-content: space-between; */
+	}
+
 	.second-highlight ul li:last-child {
 		display: inherit;
 	}
