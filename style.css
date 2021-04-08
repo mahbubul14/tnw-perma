@@ -35,6 +35,11 @@ img {
 	display: inline;
 }
 
+.heading-orange {
+	color: var(--orange);
+	font-size: 1.7rem;
+}
+
 /*
 !# ############################################################################################################################## #
 !# ----------------------------------------------------------- Navbar ----------------------------------------------------------- #
@@ -644,7 +649,7 @@ footer {
 	font-size: 13px;
 }
 
-.c-b-p-text a {
+.cat-big-pic .c-b-p-text a {
 	color: gray;
 	font-size: 0.9rem;
 }
@@ -781,12 +786,12 @@ footer {
 	color: var(--orange);
 }
 
-.c-m-links a {
+.cat-middle .c-m-links a {
 	color: var(--orange);
 	font-weight: 800;
 }
 
-.c-m-pic img {
+.cat-middle .c-m-pic img {
 	width: 100px;
 	height: 100px;
 }
@@ -797,7 +802,7 @@ footer {
 ? ============================================================================
  */
 
-.cat-links li {
+.cat-item .cat-links li {
 	list-style: none;
 	padding: 6px 0 6px 0;
 	border-bottom: 1px solid rgb(238, 232, 232);
@@ -808,7 +813,7 @@ footer {
 	color: var(--orange);
 }
 
-.cat-links li a {
+.cat-item .cat-links li a {
 	color: grey;
 	font-size: 0.9rem;
 }
@@ -836,8 +841,6 @@ footer {
 }
 
 .news h3 {
-	color: var(--orange);
-	font-size: 1.7rem;
 	margin-bottom: 24px;
 }
 
@@ -860,7 +863,7 @@ footer {
 	padding-left: 10px;
 }
 
-.News-links a {
+.news-container .d-grid-news .News-links a {
 	color: black;
 	font-weight: bold;
 }
@@ -877,28 +880,34 @@ footer {
 !#                                                              End                                                              #
 !# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
  */
+
 /*
 !# ############################################################################################################################## #
 !# ----------------------------------------------------------- Deals ----------------------------------------------------------- #
 !# ############################################################################################################################## #
  */
- .deals h3 {
-	color: orangered;
-	font-weight: bolder;
-	font-size: 1.7rem;
-	margin-bottom: 24px;
- }
+.strike-through {
+	text-decoration: line-through;
+}
 
- .deals {
-	 padding: 20px;
- }
+.deals h3 {
+	padding-bottom: 24px;
+}
 
- /*
-? ============================================================================
-?  =================================== Lists ================================
-? ============================================================================
+.see {
+	float: right;
+	font-size: 1rem;
+}
+
+.deals {
+	padding: 20px;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
  */
-
 
 /*
 !# ############################################################################################################################## #
@@ -1070,10 +1079,12 @@ footer {
 	.news-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
 	.d-grid-news {
 		grid-template-columns: 100%;
 		grid-template-rows: 53% 0.5fr;
 	}
+
 	.News-links {
 		padding-top: 10px;
 	}
@@ -1168,7 +1179,7 @@ footer {
 		grid-template-rows: repeat(3, 1fr);
 	}
 
-	.cat-links li a {
+	.cat-item .cat-links li a {
 		font-size: 0.7rem;
 	}
 
@@ -1207,6 +1218,7 @@ footer {
 	.c-b-p-9 {
 		height: 16rem;
 	}
+
 	/*
  *──
  *── ────────────────────────────────────────── NEWS
