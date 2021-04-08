@@ -13,8 +13,11 @@
   list-style: none;
 }
 
+a {
+  color: gray;
+}
+
 body {
-  /* width: 100vw; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +36,11 @@ img {
 
 .d-inline {
   display: inline;
+}
+
+.heading-orange {
+  color: var(--orange);
+  font-size: 1.7rem;
 }
 
 /*
@@ -137,7 +145,6 @@ img {
 }
 
 .nav-top-row-2-L a {
-  /* border: 2px solid red; */
   padding: 0 12px;
   color: gray;
 }
@@ -608,6 +615,322 @@ footer {
 
 /*
 !# ############################################################################################################################## #
+!# ----------------------------------------------------------- Category ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+.categories {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.cat-item {
+  padding: 20px;
+}
+
+.cat-item h3 {
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+
+/*
+? ============================================================================
+?  ========================= Catetogry Big Picture  =========================
+? ============================================================================
+ */
+
+.cat-big-pic {
+  margin-bottom: 2px;
+}
+
+.c-b-p-text {
+  padding: 14px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.cat-big-pic p {
+  color: white;
+  font-size: 13px;
+}
+
+.cat-big-pic .c-b-p-text a {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.c-b-p-text a:nth-child(2) {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.cat-big-pic .c-b-p-text h4 a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.c-b-p-1 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/hard-fork.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-2 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/app.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-3 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/gear.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-4 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/tech.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-5 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/creative.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-6 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/podium.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-7 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/insights.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-8 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/lunch.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.c-b-p-9 {
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgb(0, 0, 0)
+    ),
+    url('images/distract.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+? ============================================================================
+?  ============================ Catetogry Middle  ============================
+? ============================================================================
+ */
+.cat-middle {
+  background-color: var(--pinkish);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.c-m-links {
+  padding: 10px 14px 0 14px;
+}
+
+.c-m-links p {
+  color: var(--orange);
+}
+
+.cat-item .cat-middle .c-m-links a {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.cat-middle .c-m-pic img {
+  width: 100px;
+  height: 100px;
+}
+
+/*
+? ============================================================================
+?  ============================ Catetogry Links===  =========================
+? ============================================================================
+ */
+
+.cat-item .cat-links li {
+  list-style: none;
+  padding: 6px 0 6px 0;
+  border-bottom: 1px solid rgb(238, 232, 232);
+}
+
+.cat-links ul li::before {
+  content: '\2022';
+  color: var(--orange);
+}
+
+.cat-item .cat-middle .cat-links li a {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- NEWS ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+
+.news {
+  padding: 20px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 10px;
+}
+
+.news h3 {
+  margin-bottom: 24px;
+}
+
+/*
+? ============================================================================
+?  =================================== Lists ================================
+? ============================================================================
+ */
+
+.d-grid-news {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+/*
+*-------------------------------- links
+ */
+
+.News-links {
+  padding-left: 10px;
+}
+
+.news-container .d-grid-news .News-links h4 a {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.News-links p {
+  color: gray;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  margin-bottom: 12px;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- Deals ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+.strike-through {
+  text-decoration: line-through;
+}
+
+.deals h3 {
+  padding-bottom: 24px;
+}
+
+.see {
+  float: right;
+  font-size: 1rem;
+}
+
+.deals {
+  padding: 20px;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
 !# -------------------------------------------------------- Media Query -------------------------------------------------------- #
 !# ############################################################################################################################## #
  */
@@ -719,6 +1042,72 @@ footer {
   .third-highlight ul li:last-child {
     display: none;
   }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Category
+ *──
+ */
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .c-b-p-1 {
+    height: 19rem;
+  }
+
+  .c-b-p-2 {
+    height: 19rem;
+  }
+
+  .c-b-p-3 {
+    height: 19rem;
+  }
+
+  .c-b-p-4 {
+    height: 19rem;
+  }
+
+  .c-b-p-5 {
+    height: 19rem;
+  }
+
+  .c-b-p-6 {
+    height: 19rem;
+  }
+
+  .c-b-p-7 {
+    height: 19rem;
+  }
+
+  .c-b-p-8 {
+    height: 19rem;
+  }
+
+  .c-b-p-9 {
+    height: 19rem;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── NEWS
+ *──
+ */
+
+  .news-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .d-grid-news {
+    grid-template-columns: 100%;
+    grid-template-rows: 53% 0.5fr;
+  }
+
+  .News-links {
+    padding-top: 10px;
+  }
 }
 
 /*
@@ -798,6 +1187,67 @@ footer {
 
   .f-fourth {
     display: unset;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Category
+ *──
+ */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .cat-item .cat-links li a {
+    font-size: 0.7rem;
+  }
+
+  .c-b-p-1 {
+    height: 16rem;
+  }
+
+  .c-b-p-2 {
+    height: 16rem;
+  }
+
+  .c-b-p-3 {
+    height: 16rem;
+  }
+
+  .c-b-p-4 {
+    height: 16rem;
+  }
+
+  .c-b-p-5 {
+    height: 16rem;
+  }
+
+  .c-b-p-6 {
+    height: 16rem;
+  }
+
+  .c-b-p-7 {
+    height: 16rem;
+  }
+
+  .c-b-p-8 {
+    height: 16rem;
+  }
+
+  .c-b-p-9 {
+    height: 16rem;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── NEWS
+ *──
+ */
+
+  .news-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
