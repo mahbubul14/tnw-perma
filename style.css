@@ -1,0 +1,808 @@
+:root {
+  --orange: #f42;
+  --pinkish: #ffebe7;
+  --almostPink: #fffaf8;
+  --borderpink: #ffcdc2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  /* width: 100vw; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline {
+  display: inline;
+}
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- Navbar ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+.root-header {
+  background-color: white;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*
+? ============================================================================
+?  ================================ nav TOP  ================================
+? ============================================================================
+ */
+
+/*
+ *──
+ *── ────────────────────────────────────────── nav top LEFT
+ *──
+ */
+.nav-top-L {
+  width: 106px;
+  height: 48px;
+  background-color: black;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: 47px;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── nav top Right
+ *──
+ */
+.nav-top-R {
+  width: 90%;
+}
+
+/*
+ *──
+ *── ─────────────────────────── nav top row 1
+ *──
+ */
+
+.nav-top-row-1-container {
+  display: none;
+}
+
+.nav-top-row-1 {
+  background-color: black;
+  height: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top-row-1 a {
+  color: silver;
+  padding-left: 12px;
+}
+
+/*
+ *──
+ *──  nav top row 1 Right <────
+ *──
+ */
+.nav-top-row-1-R {
+  padding-right: 15px;
+}
+
+/*
+ *──
+ *── ─────────────────────────── nav top row 2
+ *──
+ */
+.nav-top-row-2 {
+  width: 100%;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+/*
+ *──
+ *──  nav top row 2 L <────
+ *──
+ */
+.nav-top-row-2-L-container {
+  display: none;
+}
+
+.nav-top-row-2-L {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-top-row-2-L a {
+  /* border: 2px solid red; */
+  padding: 0 12px;
+  color: gray;
+}
+
+/*
+ *──
+ *──  nav top row 2 icon_1 <────
+ *──
+ */
+.nav-top-row-2-icons {
+  width: 100%;
+  height: 48px;
+  justify-content: flex-end;
+}
+
+.nav-top-row-2-icons a {
+  width: 48px;
+  padding: 15px;
+  border-left: 1px solid gray;
+}
+
+/*
+? ============================================================================
+?  ================================ nav bottom  ================================
+? ============================================================================
+ */
+.nav-bottom {
+  font-size: 0.8rem;
+  height: 60px;
+  background-color: rgb(255, 221, 51);
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- Footer ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+footer {
+  width: 100%;
+}
+
+/*
+? ============================================================================
+?  ============================== footer row 1  ==============================
+? ============================================================================
+ */
+.footer-row-1 {
+  background-color: rgb(19, 19, 19);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── footer-icon
+ *──
+ */
+.icons {
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  flex-wrap: wrap;
+}
+
+.icons li a {
+  border-radius: 50%;
+  background-color: rgb(85, 85, 85);
+  padding: 12px;
+  margin: 35px 3px 21px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── footer links
+ *──
+ */
+
+.footer-links {
+  margin-bottom: 35px;
+}
+
+.footer-links li a {
+  color: silver;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 4px;
+}
+
+/*
+? ============================================================================
+?  ============================== footer row 2  ==============================
+? ============================================================================
+ */
+.footer-row-2 {
+  color: rgb(170, 170, 170);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 32px 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.f-row-2s {
+  margin: 0 5px;
+}
+
+.footer-row-2 p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── 1
+ *──
+ */
+
+.f-row-2-1 img {
+  width: 40px;
+  height: auto;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── 3
+ *──
+ */
+
+.f-row-2-3 img {
+  width: 66px;
+  height: auto;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- Highlights ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+.highlights {
+  margin-top: 110px;
+  width: 100%;
+  height: 55rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'first-highlight'
+    'second-highlight'
+    'third-highlight';
+}
+
+.highlights-article {
+  margin: 10px;
+  align-items: flex-end;
+  color: white;
+}
+
+.highlights-article h2 a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.highlights-article ul li {
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.highlights-article ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.lower-highlight li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+/*
+? ============================================================================
+?  ============================== 1st highlight  ==============================
+? ============================================================================
+ */
+.first-highlight {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgb(0, 0, 0)
+    ),
+    url('images/logo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  grid-area: first-highlight;
+}
+
+.tnw-red {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.first-highlight .biger-font a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.first-highlight .tnw-red img {
+  width: 390px;
+  height: 110px;
+}
+
+/*
+? ============================================================================
+?  ============================== 2nd highlight  ==============================
+? ============================================================================
+ */
+.second-highlight {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgb(0, 0, 0)
+    ),
+    url('images/google-account.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  grid-area: second-highlight;
+}
+
+/*
+? ============================================================================
+?  ============================== 3rd highlight  ==============================
+? ============================================================================
+ */
+.third-highlight {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgb(0, 0, 0)
+    ),
+    url('images/macapp.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  grid-area: third-highlight;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# ----------------------------------------------------------- Funding ----------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+.funding {
+  width: 100%;
+  padding: 20px;
+}
+
+/*
+? ============================================================================
+?  ============================== funding header  ==============================
+? ============================================================================
+ */
+.funding-header {
+  margin-bottom: 24px;
+}
+
+.funding .funding-header a {
+  color: var(--orange);
+}
+
+.funding-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.funding .funding-header li {
+  margin: 12px 10px 12px 0;
+}
+
+.f-parent {
+  position: relative;
+}
+
+.funding-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+/*
+? ============================================================================
+?  ============================== P's  ==============================
+? ============================================================================
+ */
+
+/*
+ *──
+ *── ────────────────────────────────────────── P1
+ *──
+ */
+.p1 {
+  background-color: var(--orange);
+  padding: 10px 16px 10px 84px;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── P2
+ *──
+ */
+.p2 {
+  background-color: var(--pinkish);
+  padding: 10px 16px 10px 84px;
+  font-size: 1.8rem;
+}
+
+.p2 span {
+  display: block;
+  font-size: 1rem;
+  color: gray;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── P3
+ *──
+ */
+.p3 {
+  background-color: var(--almostPink);
+  border-bottom: 1px solid var(--borderpink);
+  padding: 16px 0;
+}
+
+.f-parent .p3 a {
+  display: block;
+  padding: 8px 16px;
+}
+
+.f-parent .p3 img {
+  width: 16px;
+  height: 16px;
+}
+
+.p3 p {
+  display: inline;
+}
+
+/*
+ *──
+ *── ────────────────────────────────────────── P4
+ *──
+ */
+.p4 {
+  background-color: var(--almostPink);
+  padding: 16px 16px 40px 16px;
+}
+
+/*
+? ============================================================================
+?  ============================== f - first  ==============================
+? ============================================================================
+ */
+.f-container .f-first a {
+  color: gray;
+}
+
+.f-first .p1 a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*
+? ============================================================================
+?  ============================== f - second  ==============================
+? ============================================================================
+ */
+.f-container .f-second a {
+  color: gray;
+}
+
+.f-second .p1 a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*
+? ============================================================================
+?  ============================== f - third  ==============================
+? ============================================================================
+ */
+.f-container .f-third a {
+  color: gray;
+}
+
+.f-third .p1 a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*
+? ============================================================================
+?  ============================== f - fourth  ==============================
+? ============================================================================
+ */
+.f-fourth {
+  display: none;
+}
+
+.f-container .f-fourth a {
+  color: gray;
+}
+
+.f-fourth .p1 a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
+
+/*
+!# ############################################################################################################################## #
+!# -------------------------------------------------------- Media Query -------------------------------------------------------- #
+!# ############################################################################################################################## #
+ */
+
+@media only screen and (min-width: 768px) {
+  /*
+ *──
+ *── ────────────────────────────────────────── Navbar
+ *──
+ */
+
+  .nav-top-R {
+    width: 100%;
+  }
+
+  .nav-top-L {
+    height: 80px;
+    padding: 16px 0;
+  }
+
+  .nav-top-row-1-container {
+    display: inherit;
+  }
+
+  .nav-top-row-2-L-container {
+    display: inherit;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bottom {
+    height: 32px;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Footer
+ *──
+ */
+
+  .footer-row-2 {
+    flex-direction: row;
+    padding: 40px 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Funding
+ *──
+ */
+  .f-container {
+    display: flex;
+  }
+
+  .f-parent {
+    margin: 0 10px;
+    width: 100%;
+  }
+
+  .funding-header {
+    padding-left: 10px;
+  }
+
+  .funding-header ul {
+    display: flex;
+  }
+
+  .funding-header ul li {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--orange);
+  }
+
+  .funding-header ul li:last-child {
+    border-right: 0;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Highlights
+ *──
+ */
+  .highlights {
+    height: 27rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'first-highlight second-highlight'
+      'first-highlight third-highlight';
+  }
+
+  .first-highlight .biger-font a {
+    font-size: 2rem;
+  }
+
+  /* *--------------------------------- */
+
+  .second-highlight ul li:last-child {
+    display: none;
+  }
+
+  /* *-------------------------------- */
+
+  .third-highlight ul li:last-child {
+    display: none;
+  }
+}
+
+/*
+!# ─────────────────────────────────────────────────────────────────────────────────────────── Desktop
+ */
+
+@media only screen and (min-width: 1024px) {
+  /*
+ *──
+ *── ────────────────────────────────────────── Navbar
+ *──
+ */
+  .nav-top-L {
+    display: none;
+  }
+
+  .nav-top-row-1-L {
+    padding-left: 10px;
+  }
+
+  .nav-top-row-2-L {
+    padding-left: 10px;
+  }
+
+  .nav-bottom {
+    justify-content: flex-start;
+    padding-left: 22px;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Highlights
+ *──
+ */
+  .first-highlight {
+    background-image:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.9) 20%,
+        rgba(245, 211, 211, 0.3) 50%,
+        rgba(255, 0, 0, 0.7) 100%
+      ),
+      url('images/logo.png');
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .tnw-red {
+    display: inherit;
+  }
+
+  .second-highlight ul li:last-child {
+    display: inherit;
+  }
+
+  .first-highlight .biger-font a {
+    font-size: 2.6rem;
+  }
+
+  /* *-------------------------------- */
+
+  .third-highlight ul li:last-child {
+    display: inherit;
+  }
+
+  /*
+ *──
+ *── ────────────────────────────────────────── Funding
+ *──
+ */
+  .funding-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .f-fourth {
+    display: unset;
+  }
+}
+
+/*
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+!#                                                              End                                                              #
+!# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────#
+ */
